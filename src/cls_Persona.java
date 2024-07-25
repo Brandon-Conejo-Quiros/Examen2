@@ -10,6 +10,19 @@ public class cls_Persona {
     private String Creencia;
     private String Gusto_Culinario;
     private String Genero;
+    private boolean Seleccionado;
+
+
+    //Para ver si ya fue elegido
+
+
+    public boolean isSeleccionado() {
+        return Seleccionado;
+    }
+
+    public void setSeleccionado(boolean seleccionado) {
+        Seleccionado = seleccionado;
+    }
 
     private Date fecNac;
 
@@ -98,6 +111,7 @@ public class cls_Persona {
     public void setCreencia(String creencia) {
         Creencia = creencia;
     }
+
 
     public String getGusto_Culinario() {
         return Gusto_Culinario;

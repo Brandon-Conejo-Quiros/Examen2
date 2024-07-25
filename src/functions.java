@@ -19,6 +19,8 @@ public class functions {
         System.out.println();
     }
 
+
+    //The next few lines of code create different assortments of random qualities
     public String Ocupacion() {
         Random rnd = new Random();
         String Ocupaciones[] = {
@@ -61,16 +63,44 @@ public class functions {
     }
 
 
+   //This is used to assign the relations the groups will have
+    public String Grupo() {
+        Random rnd = new Random();
+        String Relacion[] = {
+                "Trabajo","Musica","Creencia","Comida","Genero"
+        };
+        return Relacion[rnd.nextInt(Relacion.length)];
+    }
 
-//    public Date Nacimiento() {
-//        Random rnd = new Random();
-//        Date Nacimiento[] = {
-//
-//        };
-//        return Nacimiento[rnd.nextInt(Nacimiento.length)];
-//    }
+
+    public String Extra1() {
+        Random rnd = new Random();
+        String Extra1[] = {
+                "Hombre","Mujer","No binario","Hombre Trans","Mujer Trans",
+                "Comida Marina","Vegano","Vegetariano","Comida exotica","Pollo",
+                "Cristianidad","Budismo","Ateismo","Agnostiscismo","Mormonismo",
+                "Pop","Rock","Metal","Electronica","Hip Hop","Jazz",
+                "Dentista","Chofer","Oficinista","Profesor","Doctor","Bombero","Florista","Atleta","Pescador","Panadero"
 
 
+        };
+        return Extra1[rnd.nextInt(Extra1.length)];
+    }
+
+
+    public String Extra2() {
+        Random rnd = new Random();
+        String Extra2[] = {
+                "Hombre","Mujer","No binario","Hombre Trans","Mujer Trans",
+                "Comida Marina","Vegano","Vegetariano","Comida exotica","Pollo",
+                "Cristianidad","Budismo","Ateismo","Agnostiscismo","Mormonismo",
+                "Pop","Rock","Metal","Electronica","Hip Hop","Jazz",
+                "Dentista","Chofer","Oficinista","Profesor","Doctor","Bombero","Florista","Atleta","Pescador","Panadero"
+
+
+        };
+        return Extra2[rnd.nextInt(Extra2.length)];
+    }
 
 
 
